@@ -5,19 +5,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CartService {
-  items: Product[] = [];
   constructor() {}
-}
+  items: Product[] = [];
 
-addToCart(product: Product) {
-  this.items.push(product);
-}
+  addToCart(product: Product) {
+    this.items.push(product);
+  }
 
-getItems() {
-  return this.items;
-}
+  getItems() {
+    return this.items;
+  }
 
-clearCart() {
-  this.items = [];
-  return this.items;
+  clearCart() {
+    this.items = [];
+    return this.items;
+  }
 }
